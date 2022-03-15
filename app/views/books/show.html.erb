@@ -13,5 +13,6 @@
 <th>body:</th><td><%= @book.body %></td>
 </tr>
 
-    
 </table>
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to 'back', :back %> 
