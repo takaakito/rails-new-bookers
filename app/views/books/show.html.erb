@@ -1,6 +1,17 @@
-<h2>title</h2>
-<p><%= @book.title %></p>
+  <% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
+<table>
+    
+<tr>
+<th> title:</th><td><%= @book.title %></td>
+</tr>
 
-<h2>body</h2>
-<p><%= @book.body %></p>
+<tr>
+<th>body:</th><td><%= @book.body %></td>
+</tr>
 
+    
+</table>
